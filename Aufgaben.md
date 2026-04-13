@@ -1,13 +1,13 @@
 ## Arbeitsbereich für Programmieraufgaben ##
 
-## Allgemeines **
+### Allgemeines ###
 * verwende eine Programmiersprache deiner Wahl. Wenn du magst, gerne Java.
 * die Tips sind gültig für die Programmiersprache Java
 
-## Aufgabe 1##
+### Aufgabe 1 ###
 Schreibe ein Programm, welches
 * den Inhalt von `text.txt` einliest und
-* die Anzahl der Wörter ausgibt
+* die Anzahl der in `text.txt` enthaltenen Wörter ausgibt
 
 Tips:
 * das Einlesen einer Textdatei kannst du über einen `FileInputStream` realisieren (https://www.w3schools.com/java/java_fileinputstream.asp)
