@@ -58,4 +58,4 @@ Erweitere dein Programm so, dass es rausfindet, wieviele Zeichen das längste Wo
 Erweitere dein Programm so, dass es alle vorkommenden Einzelwörter in alphabetisch aufsteigender Reihenfolge ausgibt.
 Wenn ein Wort zweimal, dreimal oder mehrfach vorkommt, dann soll die Ausgabe das Wort nur einmal enthalten.
 
-* es kommt zwar eine Liste raus aber Wörter doppeln sich wenn sie Satzzeihen hinter dann haben, dass bekomme ich nicht weg
+* es kommt zwar eine Liste raus aber Wörter doppeln sich wenn sie Satzzeihen hinter dann haben, dass bekomme ich nicht weg, alles andere macht den Code kaputt
