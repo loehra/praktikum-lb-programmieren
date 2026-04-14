@@ -25,6 +25,7 @@ public class Main {
 
         int count = 0;
         String longestWord = "";
+        TreeSet<String> words = new TreeSet<>();
 
         while (sc.hasNext()){
             String word = sc.next();
@@ -33,9 +34,14 @@ public class Main {
             if (word.length() > longestWord.length()) {
                 longestWord = word;
             }
+            words.add(word);
         }
         System.out.println("Wörter: " + count);
         System.out.println("Längstes Wort: " + longestWord);
+        System.out.println("Wörter-Liste:");
+        for (String w : words) {
+            System.out.println(w);
+        }
     }
 }
 
@@ -52,4 +58,4 @@ Erweitere dein Programm so, dass es rausfindet, wieviele Zeichen das längste Wo
 Erweitere dein Programm so, dass es alle vorkommenden Einzelwörter in alphabetisch aufsteigender Reihenfolge ausgibt.
 Wenn ein Wort zweimal, dreimal oder mehrfach vorkommt, dann soll die Ausgabe das Wort nur einmal enthalten.
 
-*ich kann keine weiteren imports einfügen, die löschen sich selber raus 
+* es kommt zwar eine Liste raus aber Wörter doppeln sich wenn sie Satzzeihen hinter dann haben, dass bekomme ich nicht weg
