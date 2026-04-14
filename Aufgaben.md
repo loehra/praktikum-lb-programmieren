@@ -16,18 +16,26 @@ Tips:
 
 import java.io.FileInputStream;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(new FileInputStream
                 ("/Users/leopold.breitkopf/praktikum-lb-programmieren/text.txt"));
+
         int count = 0;
+        String longestWord = "";
 
         while (sc.hasNext()){
-            sc.next();
+            String word = sc.next();
             count++;
+
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
+            }
         }
         System.out.println("Wörter: " + count);
+        System.out.println("Längstes Wort: " + longestWord);
     }
 }
 
@@ -37,6 +45,11 @@ public class Main {
 ### Aufgabe 2 ###
 Erweitere dein Programm so, dass es rausfindet, wieviele Zeichen das längste Wort hat
 
+*Längstes Wort: selbstverständlich
+
+
 ### Aufgabe 3 ###
 Erweitere dein Programm so, dass es alle vorkommenden Einzelwörter in alphabetisch aufsteigender Reihenfolge ausgibt.
 Wenn ein Wort zweimal, dreimal oder mehrfach vorkommt, dann soll die Ausgabe das Wort nur einmal enthalten.
+
+*ich kann keine weiteren imports einfügen, die löschen sich selber raus 
