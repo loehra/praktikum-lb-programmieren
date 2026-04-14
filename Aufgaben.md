@@ -33,3 +33,10 @@ public class Main {
 
 
 * sollten Wörter: 1495 sein
+
+### Aufgabe 2 ###
+Erweitere dein Programm so, dass es rausfindet, wieviele Zeichen das längste Wort hat
+
+### Aufgabe 3 ###
+Erweitere dein Programm so, dass es alle vorkommenden Einzelwörter in alphabetisch aufsteigender Reihenfolge ausgibt.
+Wenn ein Wort zweimal, dreimal oder mehrfach vorkommt, dann soll die Ausgabe das Wort nur einmal enthalten.
