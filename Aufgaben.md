@@ -13,9 +13,10 @@ Tips:
 * einem `Scanner` (https://www.baeldung.com/java-scanner) kannst du einen `FileInputStream` auf eine Datei übergeben, der Scanner gibt dir dann auf Anforderung (Methode `next`) immer das nächste erkannte Wort
 * versuche die Wörter in einer Schleife anzufordern
 
-
 import java.io.FileInputStream;
+import java.util.Collections;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class Main {
@@ -24,27 +25,39 @@ public class Main {
                 ("/Users/leopold.breitkopf/praktikum-lb-programmieren/text.txt"));
 
         int count = 0;
-        String longestWord = "";
-        TreeSet<String> words = new TreeSet<>();
+        double tl = 0;
+        String lw = "";
+
+        Set<String> words = new TreeSet<>(Collections.reverseOrder());
 
         while (sc.hasNext()){
-            String word = sc.next();
-            count++;
+            String word = sc.next().replaceAll("[\\p{Punct}„““”»«'']", "");
+            if (word.isEmpty()) continue;
 
-            if (word.length() > longestWord.length()) {
-                longestWord = word;
+            count++;
+            tl += word.length();
+
+            if (word.length() > lw .length()) {
+                lw  = word;
             }
             words.add(word);
         }
+
+        double dl = (count > 0) ? (tl / count) : 0;
+
         System.out.println("Wörter: " + count);
-        System.out.println("Längstes Wort: " + longestWord);
-        System.out.println("Wörter-Liste:");
-        for (String w : words) {
+
+        System.out.println("Durchschnittslänge: " + String.format("%.2f", dl));
+
+        System.out.println("Längstes Wort: " + lw );
+
+        System.out.println("Liste:");
+        for ( String w : words) {
             System.out.println(w);
         }
     }
-}
 
+}
 
 * sollten Wörter: 1495 sein
 
@@ -63,12 +76,15 @@ Wenn ein Wort zweimal, dreimal oder mehrfach vorkommt, dann soll die Ausgabe das
 ### Aufgabe 4 ###
 Basis ist der Stand aus Aufgabe 3. Ändere das Programm so, dass die Liste der Wörter in absteigender Reihenfolge ausgibt.
 
+*Set<String> words = new TreeSet<>(Collections.reverseOrder());
+
+
 ### Aufgabe 5 ###
 Ändere dein Programm so ab, dass es alle vorkommenden Zeichenlängen von Einzelwörtern - nicht die Einzelwörter selbst - in alphabetisch aufsteigender Reihenfolge ausgibt.
 
 ### Aufgabe 6 ###
 Berechne die durchschnittliche Länge alle vorkommenden Wörter.
 
-
+*Code oben
 
 
