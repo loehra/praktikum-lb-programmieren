@@ -59,3 +59,16 @@ Erweitere dein Programm so, dass es alle vorkommenden Einzelwörter in alphabeti
 Wenn ein Wort zweimal, dreimal oder mehrfach vorkommt, dann soll die Ausgabe das Wort nur einmal enthalten.
 
 * es kommt zwar eine Liste raus aber Wörter doppeln sich wenn sie Satzzeihen hinter dann haben, dass bekomme ich nicht weg, alles andere macht den Code kaputt
+
+### Aufgabe 4 ###
+Basis ist der Stand aus Aufgabe 3. Ändere das Programm so, dass die Liste der Wörter in absteigender Reihenfolge ausgibt.
+
+### Aufgabe 5 ###
+Ändere dein Programm so ab, dass es alle vorkommenden Zeichenlängen von Einzelwörtern - nicht die Einzelwörter selbst - in alphabetisch aufsteigender Reihenfolge ausgibt.
+
+### Aufgabe 6 ###
+Berechne die durchschnittliche Länge alle vorkommenden Wörter.
+
+
+
+
